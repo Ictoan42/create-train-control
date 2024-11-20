@@ -19,13 +19,13 @@ function main()
     end
     HOME_NAME = st.getStationName()
     
-    if not fs.exists("scheduler.lua") then
+    if not fs.exists("/scheduler.lua") then
         print("Downloading scheduler lib..")
         --local url = "https://github.com/tizu69/cclibs/raw/refs/heads/main/scheduler/scheduler.lua"
         local url = "https://github.com/Ictoan42/cclibs/raw/refs/heads/main/scheduler/scheduler.lua"
-        shell.run("wget "..url.." scheduler.lua")
+        shell.run("wget "..url.." /scheduler.lua")
     end
-    Scheduler = require("scheduler")
+    Scheduler = require("/scheduler")
     
     modem.closeAll()
     modem.open(PORT)
