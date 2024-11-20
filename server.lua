@@ -1,9 +1,14 @@
 PORT = 12776
 MODE = "dropoff" -- "dropoff" or "pickup"
 RESOURCE_ID = "log"
+-- The train will not leave the station if it contains
+-- BELOW this amount of cargo, even if it is called.
+-- this represents items if this is an item train, or
+-- buckets if this is a fluid train.
 RESOURCE_MIN = 2
+-- Do not modify, set the name in the station itself
 HOME_NAME = ""
-DEBUG = true
+DEBUG = false
 
 function main()
     modem = peripheral.find("modem")

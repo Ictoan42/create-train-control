@@ -1,7 +1,13 @@
 PORT = 12776
 RESOURCE_ID = "log"
+-- If the redstone signal coming into the computer is
+-- BELOW OR EQUAL TO this, it will call the train
 CALL_SIGNAL = 0
+-- If a train is currently unloading and the redstone
+-- signal coming into the computer is ABOVE OR EQUAL TO
+-- this, it will tell the train to leave
 DEPART_SIGNAL = 15
+-- Do not modify, set the name in the station itself
 STATION_NAME = ""
 
 function main()
