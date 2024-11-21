@@ -26,8 +26,8 @@ function main()
     
     if not fs.exists("/scheduler.lua") then
         print("Downloading scheduler lib..")
-        --local url = "https://github.com/tizu69/cclibs/raw/refs/heads/main/scheduler/scheduler.lua"
-        local url = "https://github.com/Ictoan42/cclibs/raw/refs/heads/main/scheduler/scheduler.lua"
+        local url = "https://github.com/tizu69/cclibs/raw/refs/heads/main/scheduler/scheduler.lua"
+        -- local url = "https://github.com/Ictoan42/cclibs/raw/refs/heads/main/scheduler/scheduler.lua"
         shell.run("wget "..url.." /scheduler.lua")
     end
     Scheduler = require("/scheduler")
