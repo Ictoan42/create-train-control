@@ -3,7 +3,7 @@ This system is composed of a client and a server:
 - The client requests for the train for be sent to it's location when needed
 - The server waits for any clients to request a delivery
 
-Works on Create 0.5.1.f, doesn't work (yet) on Create 0.5.1.j, no idea which version in between breaks it.
+Tested on Create 0.5.1.f, should work on 0.5.1.j
 
 Makes use of [tizu's scheduling library](https://github.com/tizu69/cclibs/tree/main/scheduler)
 
